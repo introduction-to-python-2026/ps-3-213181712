@@ -1,2 +1,5 @@
 def approximate_pi(n_terms):
-    pass # replace pass with your code
+    sum_of_series = 0
+    for i in range(n_terms):
+        sum_of_series = (-1)**i / (1 + 2*i)
+    return 4 * sum_of_series
